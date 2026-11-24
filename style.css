@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght,GRAD@0,8..144,100..900,44;1,8..144,100..900,44&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: acme;
+}
+
+
+body{
+    background-color: #F0EBE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.hero{
+    width: 1913px;
+    height: 1155px;
+
+    .navigation{
+        width: 100%;
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 64px;
+        padding-right: 64px;
+
+        h1{
+            span{
+                color: #D71515;
+            }
+        }
+
+        .nav-buttons{
+            width: 535px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+
+            .buttons{
+                font-size: 20px;
+            }
+
+            .buttons:hover{
+                color: #D71515;
+            }
+        }
+
+        .sign-up{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+
+            i{
+                font-size: 26px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+            
+            span:hover{
+                color: #D71515;
+            }
+
+            button{
+                width: 104px;
+                height: 48px;
+                background-color: #D71515;
+                border: none;
+                font-size: 18px;
+                color: white;
+                border-radius: 30px 8px 30px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .heroes{
+        width: 1913px;
+        height: 1155px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        background-image: url(./assets/photos/cartoon-smoke-illustrated1\ 1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1913px 1155px;
+        
+    
+        .hero-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        .comic-info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+
+            h2{
+                font-size: 30px;
+                padding-right: 470px;
+                line-height: 109px;
+                letter-spacing: -3%;
+                span{
+                    color: #D71515;
+                }
+            }
+
+            h3{
+                width: 709px;
+                height: 218px;
+                font-size: 114px;
+                span{
+                    color: #D71515;
+                }
+            }
+
+            p{
+                margin-top: 70px;
+                width: 717px;
+                height: 84px;
+                font-size: 27px;
+                font-weight: 300;
+                font-family: poppins;
+            }
+
+            input{
+                width: 642px;
+                height: 84px;
+                background-color: white;
+                border: none;
+                border-radius: 50px 12px 50px;
+                box-shadow: black 1px 1px 20px;
+
+                &::placeholder{
+                    font-size: 18px;
+                    padding-left: 30px;
+                    padding-top: 30px;
+                }
+
+            }
+
+            .search{
+                position: relative;
+                padding-right: 80px;
+                padding-top: 30px;
+
+                .mag-glass{
+                    width: 100px;
+                    height: 58px;
+                    background-color: #D71515;
+                    border-radius: 30px 8px 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;       
+                    right: 100px;
+                    top: 40px;
+                }
+
+                i{
+                    font-size: 31px;
+                    color: white;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .hero-info{
+        height: 301px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .comic-cards{
+            width: 301px;
+            height: 141px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid black;
+            box-shadow: black -8px 8px;
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                padding-bottom: 20px;
+            }
+
+            h4{
+                font-family: poppins;
+            }
+
+            p{
+                font-family: poppins;
+                width: 164px;
+                height: 23px;
+            }
+
+            img{
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+
+ }
+
+}
+
+.featured-comics{
+    width: 1298px;
+    height: 752px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    position: relative;
+
+
+    .top-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        position: absolute;
+        top: 10px;
+        margin-top: 10px;
+
+        h5{
+            font-size: 26px;
+            color: #D71515;
+            font-family: poppins;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 50px;
+        }
+    }
+
+    .featured-comic{
+        width: 412px;
+        height: 573px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 100px;
+        gap: 12px;
+        position: relative;
+        transition: transform 0.7s ease-out;
+        z-index: 10;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        .arrow{
+            width: 36px;
+            height: 36px;
+            font-size: 36px;
+            position: absolute;
+            bottom: 24px;
+            right: 30px;
+        }
+
+        img{
+            width: 377px;
+            height: 471px;
+        }
+
+        .view{
+            width: 250px;
+            height: 40px;
+            margin-right: 120px;
+
+            h5{
+                font-size: 24px;
+                font-weight: 600;
+                font-family: poppins;
+            }
+            .views{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+
+                p{
+                    width: 101px;
+                    height: 21px;
+                }
+
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        
+    
+    }
+
+
+
+}
+
+.anime-category{
+    width: 100%;
+    height: 848px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./assets/photos/Rectangle-red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    gap: 140px;
+    position: relative;
+
+    .style-yellow{
+        position: absolute;
+        left: 10px;
+        bottom: 550px;
+        z-index: 1;
+    }
+
+    .style-1{
+        position: absolute;
+        bottom: 650px;
+        
+        img{
+            width: 1920px;
+            height: 435px;
+        }
+    }
+
+    .style-2{
+        position: absolute;
+        top: 700px;
+        img{
+            width: 1920px;
+            height: 435px;
+        }
+    }
+
+   
+
+    .category-title{
+
+        h6{
+            font-size: 26px;
+            font-family: poppins;
+            text-align: center;
+            color: white;
+        }
+
+        p{
+            font-size: 50px;
+            color: white;
+        }
+    }
+
+ .category-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    .category-cards{
+        width: 301px;
+        height: 195px;
+        border-radius: 10px;
+        position: relative;
+        
+       
+        
+        img{
+            width: 301px;
+            border-radius: 10px;
+        }
+
+        .filter-{
+            width: 301px;
+            height: 182px;
+            background-color: black;
+            opacity: 0.5;
+            position: absolute;
+            top: 0px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                color: white;
+                font-size: 28px;
+                font-family: poppins;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .category-cards-comic{
+        width: 301px;
+        height: 195px;
+        border-radius: 10px;
+        position: relative;
+        
+       
+        
+        img{
+            width: 301px;
+            height: 182px;
+            border-radius: 10px;
+        }
+
+        .filter-{
+            width: 301px;
+            height: 182px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            opacity: 0.5;
+            position: absolute;
+            top: 0px;
+            border-radius: 10px;
+            
+            span{
+                font-family: poppins;
+                color: white;
+                font-size: 28px;
+                z-index: 2;
+                font-weight: 600;
+            }
+        }
+    }
+  }
+  
+}
+
+.new-arrivals{
+    width: 100%;
+    height: 1281px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    position: relative;
+   
+
+    .cool-img{
+        position: absolute;
+        bottom: 1120px;
+        right: 0px;
+        overflow: visible;
+    }
+
+
+    .view-all{
+        width: 242px;
+        height: 52px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background-color: #FFD04C;
+        position: absolute;
+        bottom: 120px;
+        font-weight: 700;
+        font-size: 16px;
+        box-shadow: black 6px 6px;
+        z-index: 1;
+    }
+
+    .arrival-title{
+       position: absolute;
+       left: 850px;
+       top: 10px;
+
+       h6{
+        text-align: center;
+        font-size: 26px;
+        color: #D71515;
+       }
+
+       p{
+        font-size: 50px;
+       }
+    }
+
+    .hero-cards{
+        width: 900px;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-right: 200px;
+       
+        
+
+
+        .hero-card{
+            width: 414px;
+            height: 361px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            &:hover{
+                background-color: #FFD04C;
+            }
+
+            .hero-content{
+                padding-right: 240px;
+
+                h6{
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: poppins;
+                    
+                }
+
+                .price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .red{
+                        color: #D71515;
+                        font-size: 24px;
+                    }
+
+                    .discount{
+                        text-decoration: line-through;
+                        font-weight: 300;
+                        font-size: 16px;
+                    }
+                }
+
+                button{
+                    width: 139px;
+                    height: 39px;
+                    background-color: #D71515;
+                    border: none;
+                    color: white;
+                    font-family: poppins;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 30px;
+                }
+            }
+            
+        }
+ 
+        .hero-card-1{
+            width: 414px;
+            height: 361px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            margin-bottom: 50px;
+
+            &:hover{
+                background-color: #FFD04C;
+            }
+
+            .hero-content{
+                padding-right: 240px;
+
+                h6{
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: poppins;
+                    
+                }
+
+                .price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .red{
+                        color: #D71515;
+                        font-size: 24px;
+                    }
+
+                    .discount{
+                        text-decoration: line-through;
+                        font-weight: 300;
+                        font-size: 16px;
+                    }
+                }
+
+                button{
+                    width: 139px;
+                    height: 39px;
+                    background-color: #D71515;
+                    border: none;
+                    color: white;
+                    font-family: poppins;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 30px;
+                }
+            }
+            
+        }
+
+    }   
+}
+
+.superhero-series{
+    width: 1920px;
+    height: 1324px;
+    background-image: url(./assets/photos/Rectangle\ dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .style-5{
+        position: absolute;
+        right: 40px;
+        bottom: 900px;
+        z-index: 1;
+    }
+
+    .style-6{
+        position: absolute;
+        top: 800px;
+        left: 40px;
+    }
+
+    .style-3{
+        position: absolute;
+        bottom: 1130px;
+        
+        img{
+            width: 1920px;
+            height: 425px;
+        }
+    }
+
+    .style-4{
+        position: absolute;
+        top: 1050px;
+        
+        img{
+            width: 1920px;
+            height: 425px;
+        }
+    }
+
+    .superhero-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+
+        .superhero-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 50px;
+            z-index: 1;
+
+            h6{
+                font-size: 26px;
+                font-family: poppins;
+                font-weight: 600;
+                color: white;
+                padding-top: 22px;
+            }
+
+            p{
+                font-size: 50px;
+                font-weight: 400;
+                color: #FFD04C;
+                letter-spacing: 3%;
+                margin-bottom: 16px;
+            }
+
+            .upcoming{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                
+                button{
+                    width: 163px;
+                    height: 58px;
+                    border: none;
+                    border-radius: 28px 4px 28px;
+                    font-size: 20px;
+
+                    &:hover{
+                        background-color: #D71515;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .superhero-card{
+        width: 100%;
+        height: 301px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 180px;
+        position: relative;
+
+        .superhero-cards{
+            width: 301px;
+            height: 449px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &:hover{
+                background-color: #FFD04C;
+            }
+
+            .super-info{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                padding-left: 8px;
+                padding-right: 8px;
+                margin-top: 6px;
+                
+                h6{
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #D71515;
+
+                }
+
+                p{
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #D71515;
+                }
+
+            }
+
+            .super-info-b{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding-left: 8px;
+                padding-right: 8px;
+                
+                h6{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #292D32;
+                }
+
+                p{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #292D32;
+                }
+
+            }
+        }
+    }
+
+    .see-more{
+        
+        button{
+            width: 242px;
+            height: 52px;
+            background-color: #D71515;
+            border-radius: 6px;
+            border: 1px solid white;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            font-family: poppins;
+            font-weight: 600;
+            position: absolute;
+            bottom: 340px;
+            left: 800px;
+            box-shadow: white 8px 8px;
+        }
+    }
+}
