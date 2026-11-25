@@ -407,6 +407,7 @@ body{
         border-radius: 10px;
         position: relative;
         transition: transform 0.5s ease-out;
+        transition: all 0.7s ease-out;
         
          &:hover{
             transform: scale(1.1);
@@ -446,6 +447,7 @@ body{
         border-radius: 10px;
         position: relative;
         transition: transform 0.5s ease-out;
+        transition: all 0.7s ease-out;
         
         &:hover{
             transform: scale(1.1);
@@ -983,7 +985,7 @@ body{
     height: 1077px;
     background-image: url(./assets/photos/red-bg.png);
     background-size: cover;
-    margin-top: 230px;
+    margin-top: 130px;
     position: relative;
 
     .style-art1{
@@ -1063,5 +1065,45 @@ body{
                 }
             }
         }
+    }
+
+    .satisfaction-rate{
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        margin-top: 160px;
+
+        .sixty{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+
+            span{
+                color: white;
+            }
+        }
+
+        p{
+            width: 623px;
+            height: 100px;
+            color: white;
+            font-family: poppins;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+
+    .line{
+        width: 1000px;
+        height: 0;
+        border: 1px solid white;
+        position: absolute;
+        left: 450px;
+        top: 650px;
     }
 }
